@@ -254,3 +254,125 @@ nav a:hover{
     color:#222;
 
 }
+
+/* ===========================================
+   THE ESTATE
+=========================================== */
+
+.estate{
+
+    padding:120px 8%;
+
+    background:#f7f5f0;
+
+}
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.section-tag{
+
+    display:block;
+
+    font-size:13px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#8c8578;
+
+    margin-bottom:20px;
+
+}
+
+.section-intro h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:56px;
+
+    font-weight:500;
+
+    max-width:800px;
+
+    margin-bottom:70px;
+
+    color:#222;
+
+}
+
+.estate-content{
+
+    display:grid;
+
+    grid-template-columns:1.3fr 1fr;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+.estate-text{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.estate-text p{
+
+    margin-bottom:32px;
+
+}
+
+.estate-facts{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.fact{
+
+    background:white;
+
+    padding:40px;
+
+    border:1px solid #e6e2da;
+
+}
+
+.fact h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    font-weight:500;
+
+    color:#1f1f1f;
+
+    margin-bottom:10px;
+
+}
+
+.fact p{
+
+    color:#666;
+
+    line-height:1.5;
+
+}
