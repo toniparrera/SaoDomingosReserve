@@ -376,3 +376,101 @@ nav a:hover{
     line-height:1.5;
 
 }
+
+/* ===========================================
+   DEVELOPMENT
+=========================================== */
+
+.development{
+
+    padding:140px 8%;
+
+    background:white;
+
+}
+
+.development-grid{
+
+    display:grid;
+
+    grid-template-columns:1.4fr 0.9fr;
+
+    gap:90px;
+
+    align-items:start;
+
+}
+
+.development-left{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.development-left p{
+
+    margin-bottom:32px;
+
+}
+
+.development-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+.highlight{
+
+    background:#f7f5f0;
+
+    padding:42px;
+
+    border-left:4px solid #b19463;
+
+}
+
+.highlight span{
+
+    display:block;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#9b8b6f;
+
+    margin-bottom:12px;
+
+}
+
+.highlight h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    font-weight:500;
+
+    margin-bottom:14px;
+
+    color:#222;
+
+}
+
+.highlight p{
+
+    color:#666;
+
+    line-height:1.6;
+
+}
