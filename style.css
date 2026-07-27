@@ -794,3 +794,45 @@ height:250px;
 }
 
 }
+
+.prev,
+.next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:white;
+
+    font-size:60px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+.prev{
+
+    left:40px;
+
+}
+
+.next{
+
+    right:40px;
+
+}
+
+.prev:hover,
+.next:hover{
+
+    transform:translateY(-50%) scale(1.15);
+
+}

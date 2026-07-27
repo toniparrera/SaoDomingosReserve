@@ -1,71 +1,90 @@
 const galleryImages = document.querySelectorAll(".gallery-grid img");
 
 const lightbox = document.getElementById("lightbox");
-
 const lightboxImg = document.getElementById("lightbox-img");
 
-const closeBtn = document.querySelector("#lightbox span");
+const closeBtn = document.querySelector(".close");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
 
-let currentImage = 0;
+let current = 0;
 
-galleryImages.forEach((image, index) => {
+function showImage(index){
 
-    image.addEventListener("click", () => {
+    current = index;
 
-        currentImage = index;
+    lightbox.style.display = "flex";
 
-        lightbox.style.display = "flex";
+    lightboxImg.src = galleryImages[current].src;
 
-        lightboxImg.src = image.src;
+}
+
+galleryImages.forEach((img,index)=>{
+
+    img.addEventListener("click",()=>{
+
+        showImage(index);
 
     });
 
 });
 
-closeBtn.addEventListener("click", () => {
+function nextImage(){
 
-    lightbox.style.display = "none";
+    current++;
+
+    if(current>=galleryImages.length){
+
+        current=0;
+
+    }
+
+    lightboxImg.src=galleryImages[current].src;
+
+}
+
+function previousImage(){
+
+    current--;
+
+    if(current<0){
+
+        current=galleryImages.length-1;
+
+    }
+
+    lightboxImg.src=galleryImages[current].src;
+
+}
+
+nextBtn.addEventListener("click",nextImage);
+
+prevBtn.addEventListener("click",previousImage);
+
+closeBtn.addEventListener("click",()=>{
+
+    lightbox.style.display="none";
 
 });
 
-lightbox.addEventListener("click", (e) => {
+lightbox.addEventListener("click",(e)=>{
 
-    if (e.target === lightbox) {
+    if(e.target===lightbox){
 
-        lightbox.style.display = "none";
+        lightbox.style.display="none";
 
     }
 
 });
 
-document.addEventListener("keydown", (e) => {
+document.addEventListener("keydown",(e)=>{
 
-    if (lightbox.style.display !== "flex") return;
+    if(lightbox.style.display!="flex") return;
 
-    if (e.key === "Escape") {
+    if(e.key==="ArrowRight") nextImage();
 
-        lightbox.style.display = "none";
+    if(e.key==="ArrowLeft") previousImage();
 
-    }
-
-    if (e.key === "ArrowRight") {
-
-        currentImage++;
-
-        if (currentImage >= galleryImages.length) currentImage = 0;
-
-        lightboxImg.src = galleryImages[currentImage].src;
-
-    }
-
-    if (e.key === "ArrowLeft") {
-
-        currentImage--;
-
-        if (currentImage < 0) currentImage = galleryImages.length - 1;
-
-        lightboxImg.src = galleryImages[currentImage].src;
-
-    }
+    if(e.key==="Escape") lightbox.style.display="none";
 
 });
