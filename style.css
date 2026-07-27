@@ -867,161 +867,77 @@ height:250px;
 
 }
 
-/* ===========================================
-   CONTACT
-=========================================== */
+/*=========================================
+CONTACT
+=========================================*/
 
 .contact{
 
-    padding:140px 8%;
+    padding:150px 8%;
 
-    background:#ece6da;
+    background:#f5f3ee;
 
     text-align:center;
 
 }
 
+.contact .section-tag{
+
+    display:block;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+    color:#8c8068;
+
+    margin-bottom:25px;
+
+}
+
 .contact h2{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:"Cormorant Garamond",serif;
 
-    font-size:62px;
+    font-size:74px;
 
     font-weight:500;
 
-    margin:20px 0;
-
-}
-
-.contact-text{
-
-    max-width:700px;
-
-    margin:0 auto 60px;
-
-    font-size:21px;
-
-    line-height:1.8;
-
-    color:#555;
-
-}
-
-.contact-card{
-
-    background:white;
-
-    max-width:500px;
-
-    margin:auto;
-
-    padding:55px;
-
-    border-radius:14px;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.08);
-
-}
-
-.contact-card h3{
-
-    font-family:'Cormorant Garamond',serif;
-
-    font-size:42px;
-
-    margin-bottom:35px;
-
-}
-
-.contact-card p{
-
-    margin:30px 0;
-
-    font-size:18px;
-
-    line-height:1.8;
-
-}
-
-.contact-card a{
+    margin-bottom:30px;
 
     color:#222;
 
-    text-decoration:none;
-
 }
 
-.contact-card a:hover{
+.contact-intro{
 
-    color:#8d6e3f;
+    max-width:760px;
 
-}
+    margin:0 auto 70px;
 
-/*========================================
-CONTACT
-========================================*/
-
-.contact{
-
-    background:#1d1d1d;
-
-    color:white;
-
-    padding:140px 0;
-
-}
-
-.contact-container{
-
-    width:90%;
-
-    max-width:1300px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:1.2fr .8fr;
-
-    gap:120px;
-
-    align-items:center;
-
-}
-
-.contact h2{
-
-    font-family:"Cormorant Garamond",serif;
-
-    font-size:64px;
-
-    font-weight:500;
-
-    margin:20px 0 40px;
-
-}
-
-.contact-left p{
-
-    font-size:20px;
+    font-size:22px;
 
     line-height:1.8;
 
-    color:#d8d8d8;
-
-    margin-bottom:45px;
-
-    max-width:650px;
+    color:#666;
 
 }
 
 .contact-card{
 
-    background:#252525;
+    max-width:760px;
 
-    padding:60px;
+    margin:auto;
 
-    border:1px solid rgba(255,255,255,.08);
+    background:white;
+
+    border-radius:20px;
+
+    padding:70px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.08);
 
 }
 
@@ -1029,53 +945,59 @@ CONTACT
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:42px;
+    font-size:60px;
 
-    margin-bottom:8px;
+    margin-bottom:10px;
 
 }
 
 .position{
 
-    color:#b8b8b8;
-
-    margin-bottom:45px;
-
-    letter-spacing:2px;
+    color:#8d8d8d;
 
     text-transform:uppercase;
 
+    letter-spacing:3px;
+
     font-size:13px;
 
-}
-
-.contact-item{
-
-    margin-bottom:35px;
+    margin-bottom:55px;
 
 }
 
-.contact-item span{
+.contact-details{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:120px;
+
+    margin-bottom:60px;
+
+}
+
+.contact-details span{
 
     display:block;
 
-    color:#9f9f9f;
-
-    margin-bottom:8px;
-
     font-size:13px;
 
     text-transform:uppercase;
 
     letter-spacing:2px;
 
+    color:#999;
+
+    margin-bottom:12px;
+
 }
 
-.contact-item a{
-
-    color:white;
+.contact-details a{
 
     text-decoration:none;
+
+    color:#222;
 
     font-size:22px;
 
@@ -1083,8 +1005,16 @@ CONTACT
 
 }
 
-.contact-item a:hover{
+.contact-details a:hover{
 
-    color:#d6c39a;
+    color:#9d7b42;
+
+}
+
+.contact .button{
+
+    display:inline-block;
+
+    padding:20px 48px;
 
 }
