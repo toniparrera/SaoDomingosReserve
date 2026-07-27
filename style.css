@@ -56,7 +56,23 @@ nav{
 
     font-size:32px;
 
-    color:#111;
+    letter-spacing:1px;
+
+}
+
+.logo a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    transition:.3s;
+
+}
+
+.logo a:hover{
+
+    opacity:.7;
 
 }
 
@@ -834,5 +850,95 @@ height:250px;
 .next:hover{
 
     transform:translateY(-50%) scale(1.15);
+
+}
+
+/* ===========================================
+   CONTACT
+=========================================== */
+
+.contact{
+
+    padding:140px 8%;
+
+    background:#ece6da;
+
+    text-align:center;
+
+}
+
+.contact h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:62px;
+
+    font-weight:500;
+
+    margin:20px 0;
+
+}
+
+.contact-text{
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    font-size:21px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+.contact-card{
+
+    background:white;
+
+    max-width:500px;
+
+    margin:auto;
+
+    padding:55px;
+
+    border-radius:14px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.contact-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+}
+
+.contact-card p{
+
+    margin:30px 0;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.contact-card a{
+
+    color:#222;
+
+    text-decoration:none;
+
+}
+
+.contact-card a:hover{
+
+    color:#8d6e3f;
 
 }
