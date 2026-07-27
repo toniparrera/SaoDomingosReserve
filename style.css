@@ -491,19 +491,15 @@ nav a:hover{
 
 }
 
-/* ===========================================
-   LOCATION
-=========================================== */
-
-/* ===========================================
-   LOCATION
-=========================================== */
+/*========================================
+LOCATION
+========================================*/
 
 .location{
 
-    padding:140px 8%;
+    padding:140px 0;
 
-    background:#f7f5f0;
+    background:#f8f7f4;
 
 }
 
@@ -511,55 +507,67 @@ nav a:hover{
 
     max-width:900px;
 
-    margin-bottom:70px;
+    margin:0 auto 70px;
 
-}
+    text-align:center;
 
-.location-intro p{
-
-    font-size:22px;
+    font-size:21px;
 
     line-height:1.8;
 
-    color:#555;
+}
+
+.location-layout{
+
+    width:90%;
+
+    max-width:1350px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:60px;
+
+    align-items:start;
 
 }
 
-.portugal-map{
-
-    margin:80px 0;
-
-}
-
-.portugal-map img{
+.google-map iframe{
 
     width:100%;
 
-    border-radius:8px;
+    height:600px;
 
-    display:block;
+    border:none;
+
+    border-radius:14px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
 
 }
 
 .connections{
 
-    max-width:900px;
+    background:white;
 
-    margin:auto;
+    border-radius:12px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
 
 }
 
 .connections h3{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:"Cormorant Garamond",serif;
 
-    font-size:42px;
+    font-size:34px;
 
-    font-weight:500;
-
-    margin-bottom:40px;
-
-    text-align:center;
+    margin-bottom:25px;
 
 }
 
@@ -571,15 +579,21 @@ nav a:hover{
 
     align-items:center;
 
-    padding:22px 0;
+    padding:14px 0;
 
-    border-bottom:1px solid #ddd8cf;
+    border-bottom:1px solid #ececec;
 
-    font-size:18px;
+}
+
+.connection:last-child{
+
+    border:none;
 
 }
 
 .connection span{
+
+    font-size:16px;
 
     color:#555;
 
@@ -587,11 +601,11 @@ nav a:hover{
 
 .connection strong{
 
+    font-size:18px;
+
     font-weight:600;
 
-    color:#8b6b3f;
-
-    letter-spacing:1px;
+    color:#111;
 
 }
 
