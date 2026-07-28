@@ -867,94 +867,106 @@ height:250px;
 
 }
 
-/*======================================
+/*=====================================
 CONTACT
-======================================*/
+=====================================*/
 
 .contact{
 
-    background:#f5f2eb;
     padding:140px 8%;
+
+    background:#f6f2ea;
+
     text-align:center;
-
-}
-
-.contact-wrapper{
-
-    max-width:950px;
-    margin:auto;
 
 }
 
 .contact h2{
 
-    font-family:'Cormorant Garamond',serif;
+    font-family:"Cormorant Garamond",serif;
+
     font-size:72px;
+
     font-weight:500;
-    margin:15px 0 25px;
+
+    margin:20px 0 35px;
 
 }
 
 .contact-intro{
 
-    font-size:21px;
-    color:#666;
-    line-height:1.8;
-    max-width:760px;
+    max-width:850px;
+
     margin:0 auto 70px;
 
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#666;
+
 }
 
-.contact-grid{
+.contact-details{
 
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
+    display:flex;
+
+    justify-content:center;
+
+    gap:120px;
+
     margin-bottom:70px;
 
-}
-
-.contact-box{
-
-    background:white;
-    padding:45px;
-    border-radius:12px;
-    box-shadow:0 15px 40px rgba(0,0,0,.06);
+    flex-wrap:wrap;
 
 }
 
-.contact-box span{
+.contact-line{
+
+    text-align:center;
+
+}
+
+.contact-line span{
 
     display:block;
+
     font-size:13px;
+
     letter-spacing:3px;
+
     text-transform:uppercase;
+
     color:#999;
-    margin-bottom:18px;
+
+    margin-bottom:15px;
 
 }
 
-.contact-box a{
+.contact-line a{
+
+    font-size:34px;
+
+    color:#222;
 
     text-decoration:none;
-    color:#222;
-    font-size:30px;
+
     font-weight:300;
 
-    /* impede partir o telefone */
     white-space:nowrap;
 
 }
 
-.contact-box a:hover{
+.contact-line a:hover{
 
-    color:#8d6e3f;
+    color:#9b7b43;
 
 }
 
 .contact .button{
 
     display:inline-block;
-    margin-top:10px;
+
+    padding:18px 42px;
 
 }
