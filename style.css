@@ -1014,7 +1014,8 @@ nav ul{
 
     width:90%;
     left:50%;
-    transform:translateX(-50%);
+    top:50%;
+    transform:translate(-50%, -50%);
     text-align:center;
 
 }
@@ -1086,6 +1087,20 @@ nav ul{
 .estate-facts{
 
     margin-top:50px;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+
+}
+
+.fact{
+
+    padding:24px 20px;
+
+}
+
+.fact h3{
+
+    font-size:32px;
 
 }
 
@@ -1101,6 +1116,18 @@ nav ul{
 .development-right{
 
     margin-top:50px;
+
+}
+
+.highlight{
+
+    padding:28px 24px;
+
+}
+
+.highlight h3{
+
+    font-size:34px;
 
 }
 
@@ -1136,6 +1163,38 @@ nav ul{
 
 
 /* CONTACT */
+
+.contact{
+
+    padding:90px 6%;
+
+}
+
+.contact h2{
+
+    font-size:44px;
+
+}
+
+.contact-intro{
+
+    font-size:18px;
+
+}
+
+.contact-details{
+
+    gap:36px;
+
+}
+
+.contact-line a{
+
+    font-size:19px;
+    white-space:normal;
+    word-break:break-word;
+
+}
 
 .contact-container{
 
