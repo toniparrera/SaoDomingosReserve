@@ -503,17 +503,13 @@ LOCATION
 
 }
 
-.location-intro{
-
-    max-width:900px;
-
-    margin:0 auto 70px;
+.location .section-intro{
 
     text-align:center;
 
-    font-size:21px;
+    max-width:1000px;
 
-    line-height:1.8;
+    margin:0 auto 70px;
 
 }
 
