@@ -1219,20 +1219,23 @@ nav ul a{
 .estate-facts{
 
     margin-top:50px;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
     gap:14px;
 
 }
 
 .fact{
 
-    padding:24px 20px;
+    padding:24px 18px;
+    min-width:0;
 
 }
 
 .fact h3{
 
-    font-size:32px;
+    font-size:26px;
+    overflow-wrap:break-word;
+    word-break:break-word;
 
 }
 
