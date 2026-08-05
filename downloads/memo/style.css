@@ -201,16 +201,25 @@ table td {
 
 
 .maps-row {
-  display: flex !important;
+  display: flex;
   gap: 14px;
-  margin-top: 14px;
-  width: 100%;
+  margin-top: 25px;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.maps-row figure {
+  width: 28%;
+  margin: 0;
 }
 .maps-row img {
-  width: 33.3% !important;
-  height: auto !important;
-  max-width: none;
+  width: 100%;
+  height: auto;
   border: 1px solid #111;
   display: block;
-  flex-shrink: 0;
+}
+.maps-row figcaption {
+  font-size: 9.5px;
+  color: #6f6f6a;
+  margin-top: 6px;
+  text-align: center;
 }
