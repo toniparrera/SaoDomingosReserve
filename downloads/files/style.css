@@ -1,0 +1,97 @@
+:root{
+  --accent:#5a5038;
+  --text:#2a2a28;
+  --muted:#6f6f6a;
+  --line:#e2ddce;
+}
+@page{
+  size:A4;
+  margin:22mm 20mm 20mm 20mm;
+  @bottom-left{content:"Monte do Pego Estate"; font-family:Helvetica,Arial,sans-serif; font-size:8.5px; color:#999;}
+  @bottom-right{content:"Page " counter(page); font-family:Helvetica,Arial,sans-serif; font-size:8.5px; color:#999;}
+}
+@page:first{
+  margin:0;
+  @bottom-left{content:none}
+  @bottom-right{content:none}
+}
+*{box-sizing:border-box;}
+body{
+  font-family:Helvetica,Arial,sans-serif;
+  color:var(--text);
+  font-size:11.3px;
+  line-height:1.55;
+  margin:0;
+}
+h1,h2,h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:bold;
+  color:#1c1c1a;
+  margin:0 0 12px 0;
+}
+p{margin:0 0 12px 0;}
+.eyebrow{
+  font-size:9.5px;
+  letter-spacing:0.14em;
+  color:var(--accent);
+  font-weight:bold;
+  text-transform:uppercase;
+  margin:0 0 8px 0;
+}
+h2.section-title{font-size:22px; line-height:1.25; margin-bottom:16px;}
+.section{page-break-before:always;}
+.section:first-of-type{page-break-before:auto;}
+
+/* Cover */
+.cover{position:relative; width:210mm; height:297mm;}
+.cover-photo{width:100%; height:63%; object-fit:cover; display:block;}
+.cover-body{padding:30px 40px 0 40px;}
+.cover-title{font-size:38px; color:#8f8b83; margin:6px 0 14px 0;}
+.cover-sub{font-size:13px; color:#555; max-width:80%;}
+.cover-rule{border:none; border-top:1.4px solid #1c1c1a; margin:22px 0 22px 0;}
+.cover-stats{display:flex; gap:36px;}
+.cover-stats .stat-value{font-family:Georgia,serif; font-size:19px; color:#333;}
+.cover-stats .stat-label{font-size:8.5px; letter-spacing:0.08em; color:#8a8a8a; text-transform:uppercase; margin-top:4px;}
+
+/* Disclaimer / contents */
+.contents{margin-top:18px;}
+.contents-item{display:flex; gap:16px; padding:13px 0; border-bottom:1px solid var(--line); font-size:12px;}
+.contents-item .num{color:var(--accent); font-weight:bold; width:20px;}
+
+/* Key/value table */
+table.kv{width:100%; border-collapse:collapse; margin:16px 0 8px 0;}
+table.kv th{text-align:left; font-size:9.5px; letter-spacing:0.06em; color:var(--accent); text-transform:uppercase; padding:8px 0; border-bottom:1px solid #bbb; font-weight:bold;}
+table.kv td{padding:11px 0; border-bottom:1px solid var(--line); font-size:11px; vertical-align:top;}
+table.kv td:first-child{width:30%; color:#3a3a37;}
+.confrontations{margin-top:14px; font-size:10.3px; color:var(--accent);}
+
+/* Simple 2-col table (location) */
+table.simple{width:100%; border-collapse:collapse; margin:16px 0 8px 0;}
+table.simple th{text-align:left; font-size:9.5px; letter-spacing:0.06em; color:var(--accent); text-transform:uppercase; padding:8px 0; border-bottom:1px solid #bbb; font-weight:bold;}
+table.simple td{padding:9px 0; border-bottom:1px solid var(--line); font-size:11px;}
+.table-note{font-size:9.5px; color:var(--muted); margin-top:10px; font-style:italic;}
+
+/* Stat highlight row */
+.stats{display:flex; gap:26px; margin:18px 0 22px 0;}
+.stat{border-left:3px solid var(--accent); padding-left:13px; flex:1;}
+.stat .value{font-family:Georgia,serif; font-size:22px; color:#222; line-height:1;}
+.stat .label{font-size:8.7px; letter-spacing:0.05em; color:#7a7a75; text-transform:uppercase; margin-top:5px;}
+
+h3.sub{font-size:14.5px; margin-top:22px; margin-bottom:8px;}
+ul.bullets{margin:0 0 10px 0; padding-left:18px;}
+ul.bullets li{margin-bottom:10px;}
+
+blockquote{border-left:3px solid var(--accent); padding-left:16px; font-style:italic; color:#666; font-family:Georgia,serif; font-size:12.5px; margin:20px 0; line-height:1.5;}
+.quote-source{font-size:9.5px; color:var(--muted); margin-top:-4px;}
+
+.maps-row{display:flex; gap:14px; margin-top:14px;}
+.maps-row img{width:33.3%; border:1px solid #111;}
+
+.gallery{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:18px;}
+.gallery img{width:100%; height:52mm; object-fit:cover; display:block;}
+
+.contact-block p{margin:0 0 4px 0;}
+.contact-name{color:#8f8b83; font-family:Georgia,serif; font-size:15px; margin-bottom:10px;}
+.contact-label{font-size:9px; letter-spacing:0.08em; text-transform:uppercase; color:#888; margin-top:14px;}
+.contact-value{color:#8f8b83; font-family:Georgia,serif; font-size:13px;}
+.fine-print{font-size:9px; color:#999; margin-top:40px;}

@@ -1352,3 +1352,13 @@ nav ul a{
 }
 
 }
+
+.maps-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 14px;
+}
+.maps-row img {
+  width: 33.3%;
+  border: 1px solid #111;
+}
