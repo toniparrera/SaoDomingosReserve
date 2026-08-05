@@ -198,3 +198,19 @@ table td {
 }
 .contact-box .label { color: #a89e8c; font-size: 8pt; letter-spacing: 1px; margin-bottom: 1mm; }
 .contact-box .val { font-family: Georgia, serif; font-size: 12pt; margin-bottom: 5mm; }
+
+
+.maps-row {
+  display: flex !important;
+  gap: 14px;
+  margin-top: 14px;
+  width: 100%;
+}
+.maps-row img {
+  width: 33.3% !important;
+  height: auto !important;
+  max-width: none;
+  border: 1px solid #111;
+  display: block;
+  flex-shrink: 0;
+}
